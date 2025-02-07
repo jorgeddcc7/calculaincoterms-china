@@ -242,6 +242,9 @@ button:hover {
 }
 
 /* TABLA INCOTERMS */
+#tabla-incoterms {
+    margin-top: 55px;
+}
 .tabla-incoterms {
     width: 100%;
     border-collapse: collapse;
