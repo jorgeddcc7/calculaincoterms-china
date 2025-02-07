@@ -150,7 +150,7 @@ button:hover {
     }
     .container {
         max-width: 700px;
-        margin-top: 50px;
+        margin: 50px auto;
     }
 }
 @media (max-width: 500px) {
@@ -169,7 +169,7 @@ button:hover {
         white-space: nowrap;
     }
     .container {
-        margin-top: 72px;
+        margin-top: 78px;
     }
     #convertir {
         width: fit-content;
