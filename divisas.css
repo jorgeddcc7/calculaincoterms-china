@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(244, 247, 252);
+    display: flex;
+    justify-content: center;
+}
+
+/* Links */
+.link__distancia {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0003;
+    transition: all 0.3s ease;
+}
+
+
+.link__distancia:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+.link__distancia i {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.link__incoterms {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0003;
+    transition: all 0.3s ease;
+}
+
+
+.link__incoterms:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+.link__incoterms i {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+/* Main */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+
+h1 {
+    font-size: 28px;
+    color: rgb(0, 123, 255);
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+button {
+    width: 30%;
+    padding: 12px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: rgb(2, 88, 179);
+}
+
+
+#resultado {
+    margin-top: 10px;
+    font-size: 19px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    background-color: #cae0f8;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #0056b399;
+}
+
+
+@media (max-width: 1280px) {
+    .link__incoterms, .link__distancia {
+        position: absolute;
+        top: 0;
+    }
+    .container {
+        max-width: 700px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .link__incoterms {
+        position: absolute;
+        top: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        width: fit-content;
+    }
+    .link__distancia {
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        white-space: nowrap;
+    }
+    .container {
+        margin-top: 72px;
+    }
+    #convertir {
+        width: fit-content;
+    }
+}
+
+/* Estilo de los bloques de anuncios */
+.adsense-container {
+    position: fixed;
+    top: 90px;
+    width: 250px; /* Tamaño fijo para los anuncios */
+    height: 250px;
+    border-radius: 8px;
+}
+
+.adsense-container.left {
+    left: 10px; /* Coloca el anuncio a la izquierda */
+}
+
+.adsense-container.right {
+    right: 10px; /* Coloca el anuncio a la derecha */
+}
+
+@media (max-width: 768px) {
+    .adsense-container {
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        top: auto;
+        bottom: 10px;
+    }
+
+    .adsense-container.left,
+    .adsense-container.right {
+        position: static;
+        display: block;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
